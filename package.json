@@ -1,0 +1,19 @@
+{
+  "name": "react-native-image-store-ext",
+  "version": "0.0.1",
+  "description": "React Native Extension for Android Image Store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seancunningham/react-native-image-store-ext.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seancunningham/react-native-image-store-ext/issues"
+  },
+  "homepage": "https://github.com/seancunningham/react-native-image-store-ext#readme"
+}
