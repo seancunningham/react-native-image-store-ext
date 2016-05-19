@@ -15,9 +15,9 @@ import java.io.File;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-public class ImageStoreExt extends ReactContextBaseJavaModule {
+public class RCTImageStoreManagerExt extends ReactContextBaseJavaModule {
   final ReactApplicationContext reactContext;
-  public ImageStoreExt(ReactApplicationContext reactContext) {
+  public RCTImageStoreManagerExt(ReactApplicationContext reactContext) {
     super(reactContext);
     this.reactContext = reactContext;
     return;
@@ -25,17 +25,19 @@ public class ImageStoreExt extends ReactContextBaseJavaModule {
   
   @Override
   public String getName() {
-    return "ImageStoreExt";
+    return "RCTImageStoreManagerExt";
   }
   
   @ReactMethod
-  public void removeImageForTag(String file_uri){
+  public Boolean removeImageForTag(String file_uri){
     File file = null;
     try {
       file = new File(new URI(file_uri));
       file.delete();
+      return true;
     } catch (URISyntaxException e) {
       e.printStackTrace();
+      return false;
     }
   }
 }

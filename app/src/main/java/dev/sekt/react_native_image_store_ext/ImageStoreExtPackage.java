@@ -18,7 +18,7 @@ public class ImageStoreExtPackage implements ReactPackage {
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-        return Arrays.<NativeModule>asList(new ImageStoreExt(reactContext));
+        return Arrays.<NativeModule>asList(new RCTImageStoreManagerExt(reactContext));
     }
 
     @Override
